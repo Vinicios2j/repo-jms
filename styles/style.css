@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #FF6347, #FFD700); /* Tons quentes */
+    color: #333;
+}
+
+/* Container principal */
+#container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    text-align: center;
+}
+
+/* Caixa de entrada e botão */
+#box {
+    margin-bottom: 20px;
+}
+
+#idProduct {
+    width: calc(100% - 30px);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.3);
+    color: #333;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+#idProduct::placeholder {
+    color: #666;
+}
+
+#idProduct:focus {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+}
+
+/* Botão */
+#btnPesquisar {
+    background-color: #FF4500; /* Laranja forte */
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+#btnPesquisar:hover {
+    background-color: #CD3700; /* Laranja mais escuro */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Informações do produto */
+#infoProduto {
+    display: block;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 0 2px 5px rgba(255, 255, 255, 0.3);
+}
